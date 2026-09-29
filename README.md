@@ -61,23 +61,9 @@ cd my-next-app
 npm install
 ```
 
-### 2. Environment Setup
-
-Create a `.env.local` file in the project root (or copy `.env.example`):
-
-```env
-# Database Connection
-MONGODB_URI=mongodb://127.0.0.1:27017/clinic_appointment_db
-
-# Authentication
-JWT_SECRET=super_secure_clinic_jwt_secret_key_2026_production_grade_token
-
-# App Branding
-NEXT_PUBLIC_APP_NAME="CarePulse Medical Center"
-NEXT_PUBLIC_APP_TAGLINE="Intelligent Healthcare & Clinic Appointment Suite"
 ```
 
-### 3. Database Seeding
+### 2. Database Seeding
 
 To populate your database with demo accounts (Admin, Doctors, Patients, Appointments, and Medical Records), start the dev server and trigger the seed endpoint or click **"Seed Real Demo Data"** on the dashboard:
 
@@ -93,7 +79,7 @@ curl -X POST http://localhost:3000/api/seed
 | 🩺 **Doctor** | `dr.sarah@carepulse.com` | `doctor123` |
 | 👤 **Patient** | `patient@carepulse.com` | `patient123` |
 
-### 4. Running the Application
+### 3. Running the Application
 
 Start the development server:
 
