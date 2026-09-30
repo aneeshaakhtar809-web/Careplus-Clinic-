@@ -114,7 +114,7 @@ export default function ProductionDashboardPage() {
       <Sidebar />
 
       {/* Main Container */}
-      <div className="flex-1 flex flex-col min-w-0">
+      <div className="flex-1 flex flex-col min-w-0 pb-16 lg:pb-0">
         {/* Top Header */}
         <Header
           title="Dashboard"
