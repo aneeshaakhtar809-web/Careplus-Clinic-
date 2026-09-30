@@ -22,16 +22,16 @@ export default function PricingPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 pt-8">
-            {/* Starter Plan */}
+            {/* Free / Basic Plan */}
             <div className="clinic-card bg-white p-6 md:p-8 rounded-2xl flex flex-col border border-slate-200">
-              <h3 className="text-lg font-bold text-slate-900">Starter Clinic</h3>
-              <p className="text-sm text-slate-500 mt-2 min-h-[40px]">Perfect for solo practitioners and small local clinics.</p>
+              <h3 className="text-lg font-bold text-slate-900">Basic Clinic</h3>
+              <p className="text-sm text-slate-500 mt-2 min-h-[40px]">Perfect for solo practitioners just getting started.</p>
               <div className="mt-6 mb-8">
-                <span className="text-4xl font-extrabold text-slate-900">$49</span>
-                <span className="text-slate-500 font-medium">/month</span>
+                <span className="text-4xl font-extrabold text-slate-900">$0</span>
+                <span className="text-slate-500 font-medium">/forever</span>
               </div>
               <ul className="space-y-4 flex-1">
-                {['Up to 2 Doctors', '500 Patients limit', 'Basic Scheduling', 'Email Support'].map((feature, i) => (
+                {['1 Doctor Account', 'Up to 50 Patients', 'Basic Scheduling', 'Community Support'].map((feature, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm text-slate-700 font-medium">
                     <Check className="w-5 h-5 text-teal-500 shrink-0" />
                     {feature}
