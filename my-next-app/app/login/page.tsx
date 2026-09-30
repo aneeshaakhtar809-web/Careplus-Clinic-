@@ -43,13 +43,8 @@ export default function LoginPage() {
       setError(result.error || 'Failed to sign in. Please check your credentials.');
       setLoading(false);
     } else {
-      if (role === 'admin') {
-        router.push('/admin/dashboard');
-      } else if (role === 'doctor') {
-        router.push('/doctor/dashboard');
-      } else {
-        router.push('/patient/dashboard');
-      }
+      // The unified dashboard is currently at the root path '/'
+      router.push('/');
     }
   };
 
