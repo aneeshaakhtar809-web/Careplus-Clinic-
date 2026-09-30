@@ -3,6 +3,13 @@ import { seedDatabase } from '@/lib/db/seed';
 
 export async function POST() {
   try {
+    if (process.env.NODE_ENV === 'production') {
+      return NextResponse.json(
+        { success: false, error: 'Seeding is disabled in production environments for security reasons.' },
+        { status: 403 }
+      );
+    }
+
     const result = await seedDatabase();
     return NextResponse.json({
       success: true,
